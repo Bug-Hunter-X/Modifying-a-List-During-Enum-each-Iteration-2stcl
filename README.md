@@ -1,0 +1,2 @@
+# Elixir Bug: Modifying List During Enum.each Iteration
+This example demonstrates a common error in Elixir: attempting to modify a list while iterating over it using `Enum.each`.  The `List.delete` function creates a *new* list, but the original list remains unchanged within the `Enum.each` loop.
